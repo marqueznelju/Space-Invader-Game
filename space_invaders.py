@@ -21,7 +21,8 @@ white = (244, 246, 247)
 deeppink = (238,18,137)
 deepskyblue = (0,191,255)
 chartreuse = (127,255,0)
-white1 = (253, 254, 254)
+blue = ((0,0,255))
+pink = ((255,100,180))
 dark_gray = (23, 32, 42)
 
 
@@ -87,8 +88,8 @@ class Alien:
 def saved():
     font = pygame.font.SysFont("Wide Latin", 22)
     font_large = pygame.font.SysFont("Wide Latin", 43)
-    text2 = font_large.render("Congratulations!", True, white1)
-    text = font.render("We Won! Against The Alien Invasion", True, white1)
+    text2 = font_large.render("Congratulations!", True, blue)
+    text = font.render("u r legend", True, blue)
     display.blit(text2, (60, height/2))
     display.blit(text, (45, height/2 + 100))
     pygame.display.update()
@@ -99,8 +100,8 @@ def saved():
 def GameOver():
     font = pygame.font.SysFont("Chiller", 50)
     font_large = pygame.font.SysFont("Chiller", 100)
-    text2 = font_large.render("WTF!", True, white1)
-    text = font.render("U r an A$$HOLE", True, white1)
+    text2 = font_large.render("WTF?", True, pink)
+    text = font.render("Idiot!", True, pink)
     display.blit(text2, (180, height/2-50))
     display.blit(text, (45, height/2 + 100))
 
